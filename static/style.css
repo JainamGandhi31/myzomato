@@ -88,7 +88,7 @@ text-decoration: none;
 /* Home section */
 #home::before{
     content: " ";
-    background: url(../bg2.jpg) no-repeat center center /cover;
+    background: url('./images/bg2.jpg') no-repeat center center /cover;
     position:absolute;
     top: 0px;
     left: 0px;
@@ -157,7 +157,7 @@ text-decoration: none;
 
 #client-section::before{
     content: " ";
-    background: url('../bg1.jpg') no-repeat center center /cover;
+    background: url('./images/bg1.jpg') no-repeat center center /cover;
     position:absolute;
     
    height:100%;  /*change*/  
@@ -200,7 +200,7 @@ position: relative;
 
 #contact::before{
     content: " ";
-    background: url('../contact.jpg') no-repeat center center /cover;
+    background: url('./images/contact.jpg') no-repeat center center /cover;
     position:absolute;
     
     height: 600px;

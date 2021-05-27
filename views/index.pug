@@ -1,0 +1,94 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Best Online Food Services in India | zomato.com
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' media='screen and (max-width:1323px)' href='../static/phone.css')
+  script
+      include ../static/index.js
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')    
+nav#navbar
+  #logo
+    img(src='../static/images/logo.png' alt='MyOnlineMeal.com')
+  ul
+    li.item
+      a(href='#home') Home
+    li.item
+      a(href='#services-container') Services
+    li.item
+      a(href='#client-section') Clients
+    li.item
+      a(href='#contact') Contact Us
+section#home
+  h1.h-primary Welcome to Zomato
+  p
+    | Our technology platform connects customers, restaurant partners and delievery partners.
+  p Place your order here and get it to your doorsteps.
+  button.btn Order Now
+section#services-container
+  h1.h-primary.center
+    | Our Services
+  #services
+    .box
+      img(src='../static/images/pizza-main.png' alt='' srcset='')
+      h2.h-secondary.center
+        | Food Catering
+      p.center
+        | Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.
+    .box
+      img(src='../static/images/paneer.png' alt='' srcset='')
+      h2.h-secondary.center
+        | Bulk Ordering
+      p.center
+        | In recipes for malai kofta, the fried dumpling balls, koftas, are made with potatoes and paneer. Keep collecting the malai in the same container and refrigerate it. The flavour becomes even richer when vegetables are added to it. An example of this would be methi matar malai where the main constituent is green peas.
+    .box
+      img(src='../static/images/delivery_boy.png' alt='' srcset='')
+      h2.h-secondary.center
+        | Food Ordering
+      p.center
+        | A customer can choose to have the food delivered or for pick-up. The process consists of a customer choosing the restaurant of their choice, scanning the menu items, choosing an item, and finally choosing for pick-up or delivery.Payment is then administered by paying with a credit card or debit card through the app or website or in cash at the restaurant when going to pickup.
+hr
+section#client-section
+  h1.h-primary.center
+    | Our Clients
+  #clients
+    .client-item
+      img(src='../static/images/apple.png' alt='Our client')
+    .client-item
+      img(src='../static/images/microsoft.png' alt='Our client')
+    .client-item
+      img(src='../static/images/amazon.png' alt='Our client')
+    .client-item
+      img(src='../static/images/dell.png' alt='Our client')
+    .client-item
+      img(src='../static/images/logo2.png' alt='Our client')
+    .client-item
+      img(src='../static/images/skype.png' alt='Our client')
+section#contact
+  h1.h-primary.center Contact Us
+  #contact-box
+    form#myform(action='/contact' method="POST" onsubmit="toggle()")
+      .formgroup
+        label(for='name') Name: 
+        input#name(type='text' name='name' placeholder='Enter your name' required)
+      .formgroup
+        label(for='email') Email: 
+        input#email(type='email' name='email' placeholder='Enter your email' required)
+      .formgroup
+        label(for='phone') Phone Number: 
+        input#phone(type='tel' name='phone' placeholder='Enter your phone number ' required)
+      .formgroup
+        label(for='msg') Message: 
+        textarea#msg(name='msg' cols='30' rows='10' required)
+      .formgroup
+        input#submit(type='submit' value='Submit' name='submit' )
+
+footer
+  .center
+    | Copyright &copy; www.zomato.com. All rights reserved.
+
+    
