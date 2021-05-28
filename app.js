@@ -2,9 +2,10 @@ const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');  //this is needed if you want to use Express to save your data into database
 const app = express();
-const path = require('path');
 const port = process.env.PORT || 8000;
 const uri = process.env.MONGODB_URI;
+const path = require('path');
+// const port = 8000;
 
 //Mongoose Connection
 const mongoose = require('mongoose');
